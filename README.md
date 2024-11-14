@@ -10,19 +10,19 @@ For my game, I want to create a simple choice-based game that focuses on creatin
 </p>
   <h2>Storyboards</h2>
   <p>
-    <h3>Branching Storyline</h3>
-    <p>
-    The core mechanic of this game is a branching storyline that allows the player to make choices that will change the game.  
-    </p>
-    <h3>Morality System</h3>
-    <p>
-      A simple system to represent certain choices and their impact on the player and the world around them. Unlocking or restricting certain choices based on           prior decisions.
-    </p>
-    <h3>Battle System</h3>
-    <p>
-      A very simple rock, paper, scissors style "minigame"/ battle system that will have an impact on the morality system
-    </p>
-    
+	<h3>Branching Storyline</h3>
+	<p>
+	The core mechanic of this game is a branching storyline that allows the player to make choices that will change the game.  
+	</p>
+	<h3>Morality System</h3>
+	<p>
+	  A simple system to represent certain choices and their impact on the player and the world around them. Unlocking or restricting certain choices based on           prior decisions.
+	</p>
+	<h3>Battle System</h3>
+	<p>
+	  A very simple rock, paper, scissors style "minigame"/ battle system that will have an impact on the morality system
+	</p>
+	
 </p>
   
 <h2>Inspirations</h2>

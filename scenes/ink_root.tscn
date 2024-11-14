@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ey8ke81thser"]
+
+[ext_resource type="Script" path="res://scripts/C_Sharp/InkRoot.cs" id="1_bimsx"]
+[ext_resource type="Resource" uid="uid://bl2g35h7b87b6" path="res://InkFiles/SFH_Draft_1.ink" id="2_2mfrx"]
+
+[node name="InkRoot" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+script = ExtResource("1_bimsx")
+story = ExtResource("2_2mfrx")

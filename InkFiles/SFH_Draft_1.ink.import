@@ -1,0 +1,16 @@
+[remap]
+
+importer="ink"
+type="Resource"
+uid="uid://bl2g35h7b87b6"
+path="res://.godot/imported/SFH_Draft_1.ink-eaf21bfb1d6b203de75e10d4e152662b.res"
+
+[deps]
+
+source_file="res://InkFiles/SFH_Draft_1.ink"
+dest_files=["res://.godot/imported/SFH_Draft_1.ink-eaf21bfb1d6b203de75e10d4e152662b.res"]
+
+[params]
+
+is_main_file=true
+compress=false
