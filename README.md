@@ -1,4 +1,5 @@
 <h1>Search for Humanity - A Choice Based Game</h1>
+<b>Developed and Written by Peter Burke</b>
 <h2>Summary</h2>
 <p>
 Write a proposal for your game for the rest of the semester. Keep it short, I don't want you to spend too much time on this, but here is what you should have.
@@ -15,7 +16,7 @@ For my game, I want to create a simple choice-based game that focuses on creatin
     </p>
     <h3>Morality System</h3>
     <p>
-      A simple system to represent certain choices and their impact on the player and the world around them. Unlocking or restricting certain choices based off of           prior decisions.
+      A simple system to represent certain choices and their impact on the player and the world around them. Unlocking or restricting certain choices based on           prior decisions.
     </p>
     <h3>Battle System</h3>
     <p>
