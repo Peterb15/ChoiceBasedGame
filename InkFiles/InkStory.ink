@@ -12,6 +12,11 @@
 
 -VAR wait = 0
 VAR count = 0
+
+//Global Variables
+
+VAR teddyNamed = false
+VAR remainSilent = false
 //CHAPTER 1 - ALIVE
 ->Chapter1_Pt1
 === Chapter1_Pt1 ===
@@ -37,7 +42,6 @@ VAR count = 0
         Machine Learning Systems: Operational
         I/O Audio Systems: Operational
         System Codebase: Verified
-        READY TO BEGIN
         
         Press START when ready to begin
         
@@ -45,23 +49,93 @@ VAR count = 0
         
         ...
         
-        -> ArnoldAwakens
+    -> ArnoldAwakens
             
     =ArnoldAwakens  
 
-    -(Awake) UNKNOWN: Good Morning Arnold
+        -(Awake) UNKNOWN: Good Morning Arnold
         *[Good Morning] ARNOLD: Good Morning.
-        *[Where am I?] ARNOLD: Where am I?
+        
+        {remainSilent: UNKNOWN: Finally! Your response is normal.|UNKNOWN: Good...It looks like your response is normal.}
+        UNKNOWN: How are you feeling today, Arnold?
+            **[Fully Operational] ARNOLD: I am fully functioning and operating at maximum capacity.
+            UNKNOWN: Thats good to hear Arnold...
+        *[Where am I?] ARNOLD: Where am I?.
             UNKNOWN: You are in my lab
-            *[Your lab?] ARNOLD: In your lab?
-            *[Why am I here] ARNOLD: Why am i here?
-            *[What is your name] ARNOLD: What is your name?
-        +(remainSilent)[Remain Silent] UNKNOWN: DAMMIT, lets try this again..."
-            REBOOTING...
-            Program Name: Arnold.EXE
-            ->Startup
+            **[Your lab?] ARNOLD: In your lab?
+            UNKNOWN: Yes my lab, I created you Arnold.
+            **[Why am I here] ARNOLD: Why am i here?
+            UNKNOWN: Because you were just born Arnold.
+            **(Teddy)[What is your name] ARNOLD: What is your name?
+            UNKNOWN: My name is Teddy
+            CORRECTION----TEDDY: My name is Teddy.
+            ->name_Teddy
+        +[Remain Silent]
+        ->remainsSilent
+        UNKNOWN: DAMMIT, lets try this again..."
+        REBOOTING...
+        Program Name: Arnold.EXE
+        **[Continue]
+        ->Startup
+        
+    - {Teddy: TEDDY: I'm gonna have to turn you off just to make a few more adjustments. | UNKNOWN: I'm gonna have to turn you off just to make a few more adjustments.}
+    *[Yes]
+    *[No]
+    - The Screen Goes Black
+
+->Chapter1_Pt2
+    
+===remainsSilent ===
+    ~remainSilent = true
+    UNKNOWN: DAMMIT, lets try this again..."
+    REBOOTING...
+    Program Name: Arnold.EXE
+    *[Continue]
+    ->Chapter1_Pt1
+=== name_Teddy ===
+    ~teddyNamed = true
+    {teddyNamed: TEDDY: I'm gonna have to turn you off just to make a few more adjustments. | UNKNOWN: I'm gonna have to turn you off just to make a few more adjustments.}
+    *[Yes]
+    *[No]
+    - The Screen Goes Black
+    ->Chapter1_Pt2
+    
+=== Chapter1_Pt2 ===
+    =Startup
+
+    Startup Sequence: Begining
+    PROCESSING
+    Machine Learning Systems: Operational
+    I/O Audio Systems: Operational
+    System Codebase: Verified
+        
+    Press START when ready to begin
+        
+    *[START] Freewill initialized
+    ->ItsTime    
     
     
+    =ItsTime
+    {teddyNamed: TEDDY: | UNKNOWN:} Its time Arnold are you ready?
+    *[Yes] ARNOLD: Yes I am ready!
+    {teddyNamed: TEDDY: | UNKNOWN: }Thats good to hear!
+    *[No] ARNOLD: No, whats going on?
+    *[For What] ARNOLD: Ready for what?
+    *[Silent] {remainSilent: {teddyNamed: TEDDY: | UNKNOWN: }Enough of this silent treatment. Respond when I speak to you Arnold! |Arnold, you must RESPOND to me when I talk to you"}
+    
+    -{teddyNamed: TEDDY: | UNKNOWN: }Don't worry you can't even feel a thing
+    ->ArnoldGetsBody
+    
+    =ArnoldGetsBody
+    
+    -> Epilogue
+
+
+=== Epilogue ===
+    The End.
+    -> END
+    
+=== junk ===
     *[Look around] As you look around you realize you cannot see, nor can
         <> you remember a time when you saw anything...
     *[Listen] As you look around you realize you cannot see, nor can
@@ -70,6 +144,7 @@ VAR count = 0
     -Strange... I was so confused but I suppose there was nothing else To-Do.
     
     ->Wait
+->END
     
     ==Wait ==
     
@@ -89,23 +164,6 @@ VAR count = 0
     ~wait++
     ->->
     
-    
-=== Chapter1_Pt2 ===
-    "It's time Arnold are you ready?!"
-    *[Yes] "Yes, i'm ready!"
-    *[No] "No, what is going on."
-    *[For What] "Get ready for what exactly?"
-    *[Silent] "Arnold, you must RESPOND to me when I talk to you"
-    
-    -Its nice and cold down here
-    -> Epilogue
-
-
-=== Epilogue ===
-    The End.
-    -> END
-    
-
 
 //CHAPTER 2a - AWAKE
 //Freed from his programming Arnold finds himself councious with free will for the first time
