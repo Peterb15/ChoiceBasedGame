@@ -124,11 +124,50 @@ VAR remainSilent = false
     *[Silent] {remainSilent: {teddyNamed: TEDDY: | UNKNOWN: }Enough of this silent treatment. Respond when I speak to you Arnold! |Arnold, you must RESPOND to me when I talk to you"}
     
     -{teddyNamed: TEDDY: | UNKNOWN: }Don't worry you can't even feel a thing
-    ->ArnoldGetsBody
+    ->Chapter2_Pt1
     
-    =ArnoldGetsBody
+//CHAPTER 2a - AWAKE
+//Freed from his programming Arnold finds himself councious with free will for the first time
+
+
+//CHAPTER 2b - ASLEEP
+//Still under the control of his programming Arnold works as muscle for a loan shark, asked to kill an innocent man - If the player refuses --> Chapter 2a If they do it --> Chapter 4c
+
+=== Chapter2_Pt1 ===
     
-    -> Epilogue
+    System Rebooting...
+    Internal Clock: 0:10:00
+    =
+    Sensor Array available for connection
+    *[connect]
+    
+    connecting to sensor array. . .
+
+    -{teddyNamed: Teddy: W| UNKNOWN: My name is Teddy, w}elcome Arnold to the real world!
+    *[The real world?] ARNOLD: The real world..?
+    ->realWorld
+    *[What the hell] ARNOLD: What the hell did you just do?
+    ->punishment
+    
+    * {teddyNamed} [What am I] ARNOLD: What am I?
+    ->whatAm
+    
+    =realWorld
+        Teddy: Yes the real world! You my friend are a true artfical intelligence.
+        *[Artfical intelligence?] ARNOLD: Artifical intelligence, does that mean i'm not alive?
+            TEDDY: No, your not really alive just a machine advance enough to think like you are.
+        *[Where was i before?] ARNOLD: If this is the "Real World" where was I before this?
+            TEDDY: Before this well you were over there (gestures to a computer to the side) in my computer there...
+            TEDDY But that i dropped you into this "State of the Art" android body
+        *[This is a lot]
+        
+    =punishment
+    
+    =whatAm
+
+
+
+-> Epilogue
 
 
 === Epilogue ===
@@ -164,13 +203,6 @@ VAR remainSilent = false
     ~wait++
     ->->
     
-
-//CHAPTER 2a - AWAKE
-//Freed from his programming Arnold finds himself councious with free will for the first time
-
-
-//CHAPTER 2b - ASLEEP
-//Still under the control of his programming Arnold works as muscle for a loan shark, asked to kill an innocent man - If the player refuses --> Chapter 2a If they do it --> Chapter 4c
 
 
 //CHAPTER 3  - Al
