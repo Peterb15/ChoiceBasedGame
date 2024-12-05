@@ -4,8 +4,16 @@
 [ext_resource type="Resource" uid="uid://bl2g35h7b87b6" path="res://InkFiles/SFH_Draft_1.ink" id="2_2mfrx"]
 
 [node name="InkRoot" type="VBoxContainer"]
-offset_right = 40.0
-offset_bottom = 40.0
-alignment = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -595.0
+offset_top = -345.0
+offset_right = -555.0
+offset_bottom = -305.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_bimsx")
 story = ExtResource("2_2mfrx")
