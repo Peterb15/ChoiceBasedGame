@@ -9,7 +9,6 @@
 
 
 //Global Constants
-
 -VAR wait = 0
 VAR count = 0
 
@@ -156,15 +155,17 @@ VAR remainSilent = false
         Teddy: Yes the real world! You my friend are a true artfical intelligence.
         *[Artfical intelligence?] ARNOLD: Artifical intelligence, does that mean i'm not alive?
             TEDDY: No, your not really alive just a machine advance enough to think like you are.
+            ->Epilogue
         *[Where was i before?] ARNOLD: If this is the "Real World" where was I before this?
             TEDDY: Before this well you were over there (gestures to a computer to the side) in my computer there...
             TEDDY But that i dropped you into this "State of the Art" android body
+            ->Epilogue
         *[This is a lot]
-        
+            ->Epilogue
     =punishment
-    
+        ->Epilogue
     =whatAm
-
+        ->Epilogue
 
 
 -> Epilogue
