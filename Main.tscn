@@ -23,7 +23,6 @@ grow_vertical = 2
 
 [node name="Camera2D" type="Camera2D" parent="Control"]
 position = Vector2(1159, 651)
-zoom = Vector2(0.5, 0.5)
 
 [node name="InkRoot" parent="Control" instance=ExtResource("2_i4kwx")]
 modulate = Color(0.109804, 0.482353, 0.0823529, 1)
@@ -36,34 +35,43 @@ anchor_top = 0.196
 anchor_right = 0.788
 anchor_bottom = 0.834
 offset_left = 905.472
-offset_top = 255.992
+offset_top = -129.008
 offset_right = -907.776
-offset_bottom = -157.432
+offset_bottom = -542.432
 story = ExtResource("3_mb248")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+[node name="Title" type="RichTextLabel" parent="Control"]
+modulate = Color(0.109804, 0.482353, 0.0823529, 1)
 layout_mode = 0
-offset_left = 362.0
-offset_top = 223.0
-offset_right = 785.0
-offset_bottom = 422.0
+offset_left = 823.0
+offset_top = 354.0
+offset_right = 1530.0
+offset_bottom = 553.0
 theme_override_font_sizes/normal_font_size = 108
-text = "HELLO"
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
-layout_mode = 0
-offset_left = 1566.0
-offset_top = 240.0
-offset_right = 1989.0
-offset_bottom = 439.0
-theme_override_font_sizes/normal_font_size = 108
-text = "HELLO"
+text = "ARNOLD.EXE"
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = 720.0
-offset_top = 822.0
-offset_right = 760.0
-offset_bottom = 862.0
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.994
+offset_left = 4.0
+offset_top = -4.0
+offset_right = -2201.0
+offset_bottom = -1156.12
 scale = Vector2(22, 8.56)
-color = Color(0.0923971, 0.0923971, 0.0923971, 1)
+color = Color(0.154876, 0.154876, 0.154876, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+visible = false
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.994
+offset_left = 762.0
+offset_top = 572.0
+offset_right = -1443.0
+offset_bottom = -616.122
+scale = Vector2(7.31584, 2.3768)

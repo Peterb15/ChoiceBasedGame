@@ -19,7 +19,18 @@ VAR remainSilent = false
 //CHAPTER 1 - ALIVE
 ->Chapter1_Pt1
 === Chapter1_Pt1 ===
-    -> OpeningBeat
+    ->StartScreen
+    
+    =StartScreen
+    ARNOLD.EXE
+    
+    
+    
+    
+    
+    
+    *[Start Program]
+        ->OpeningBeat
     
 
     
